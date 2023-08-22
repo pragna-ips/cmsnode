@@ -1,7 +1,7 @@
 
 const https = require("https");
 var express = require('express');
-var fs = require('fs');
+// var fs = require('fs');
 const cors = require("cors");
 const port = 3006;
 
