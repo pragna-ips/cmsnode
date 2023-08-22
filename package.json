@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "summernote": "^0.8.20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2"
+  }
+}
