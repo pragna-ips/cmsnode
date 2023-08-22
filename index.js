@@ -8,20 +8,20 @@ const port = 3006;
 const app = express();
 
 // let server;
-const privateKey  = fs.readFileSync('certy/privkey.pem', 'utf-8');
-const certificate = fs.readFileSync('certy/cert.pem', 'utf-8');
-const caBundle = fs.readFileSync('certy/fullchain.pem','utf-8');
-const credentials = {key: privateKey, cert: certificate, ca:caBundle};
-const parameters = {
-  key: privateKey,
-  cert: certificate
-}
+// const privateKey  = fs.readFileSync('certy/privkey.pem', 'utf-8');
+// const certificate = fs.readFileSync('certy/cert.pem', 'utf-8');
+// const caBundle = fs.readFileSync('certy/fullchain.pem','utf-8');
+// const credentials = {key: privateKey, cert: certificate, ca:caBundle};
+// const parameters = {
+//   key: privateKey,
+//   cert: certificate
+// }
 
 app.get('/',(req,res)=>{
   res.send('HTTPS in ExpressJS')
 })
 
-let server = https.createServer(parameters,app)
+let server = https.createServer(app)
 
 // var server = require('http').Server(app);
 
